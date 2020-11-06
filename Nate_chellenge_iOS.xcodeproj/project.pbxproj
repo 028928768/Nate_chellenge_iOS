@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		73D2CEB225556CA7003894F2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73D2CEB125556CA7003894F2 /* AppDelegate.swift */; };
 		73D2CEB425556CA7003894F2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73D2CEB325556CA7003894F2 /* SceneDelegate.swift */; };
-		73D2CEB625556CA7003894F2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73D2CEB525556CA7003894F2 /* ViewController.swift */; };
+		73D2CEB625556CA7003894F2 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73D2CEB525556CA7003894F2 /* HomeViewController.swift */; };
 		73D2CEB925556CA7003894F2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 73D2CEB725556CA7003894F2 /* Main.storyboard */; };
 		73D2CEBC25556CA7003894F2 /* Nate_chellenge_iOS.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 73D2CEBA25556CA7003894F2 /* Nate_chellenge_iOS.xcdatamodeld */; };
 		73D2CEBE25556CA9003894F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 73D2CEBD25556CA9003894F2 /* Assets.xcassets */; };
@@ -39,7 +39,7 @@
 		73D2CEAE25556CA7003894F2 /* Nate_chellenge_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nate_chellenge_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		73D2CEB125556CA7003894F2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		73D2CEB325556CA7003894F2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		73D2CEB525556CA7003894F2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		73D2CEB525556CA7003894F2 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		73D2CEB825556CA7003894F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		73D2CEBB25556CA7003894F2 /* Nate_chellenge_iOS.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Nate_chellenge_iOS.xcdatamodel; sourceTree = "<group>"; };
 		73D2CEBD25556CA9003894F2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -103,7 +103,7 @@
 			children = (
 				73D2CEB125556CA7003894F2 /* AppDelegate.swift */,
 				73D2CEB325556CA7003894F2 /* SceneDelegate.swift */,
-				73D2CEB525556CA7003894F2 /* ViewController.swift */,
+				73D2CEB525556CA7003894F2 /* HomeViewController.swift */,
 				73D2CEB725556CA7003894F2 /* Main.storyboard */,
 				73D2CEBD25556CA9003894F2 /* Assets.xcassets */,
 				73D2CEBF25556CA9003894F2 /* LaunchScreen.storyboard */,
@@ -261,7 +261,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				73D2CEB625556CA7003894F2 /* ViewController.swift in Sources */,
+				73D2CEB625556CA7003894F2 /* HomeViewController.swift in Sources */,
 				73D2CEB225556CA7003894F2 /* AppDelegate.swift in Sources */,
 				73D2CEB425556CA7003894F2 /* SceneDelegate.swift in Sources */,
 				73D2CEBC25556CA7003894F2 /* Nate_chellenge_iOS.xcdatamodeld in Sources */,
