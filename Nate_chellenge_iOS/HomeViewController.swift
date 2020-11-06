@@ -11,8 +11,9 @@ class HomeViewController: UIViewController {
     //MARK: Properties
     @IBOutlet weak var recommendedView: UIView!
     @IBOutlet weak var OfficialView: UIView!
+    @IBOutlet weak var searchBar: UISearchBar!
     
-    
+ 
     //MARK: Actions
     @IBAction func SegmentController(_ sender: UISegmentedControl) {
         if sender.selectedSegmentIndex == 0 {
@@ -29,6 +30,8 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+       
+       
       
     }
 

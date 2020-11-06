@@ -10,11 +10,13 @@ import UIKit
 class PageViewController: UIPageViewController, UIPageViewControllerDelegate, UIPageViewControllerDataSource {
     
     //MARK: Properties
+    var pageControl = UIPageControl()
     lazy var subViewControllers:[UIViewController] = {
         return [
             UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "ViewController1") as! ViewController1,
             UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "ViewController2") as! ViewController2,
             UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "ViewController3") as! ViewController3
+           
         ]
         
     }()
@@ -32,6 +34,7 @@ class PageViewController: UIPageViewController, UIPageViewControllerDelegate, UI
             return nil
         }
         return subViewControllers[currentIndex-1]
+        
             }
     
     func pageViewController(_ pageViewController: UIPageViewController, viewControllerAfter viewController: UIViewController) -> UIViewController? {
@@ -43,6 +46,17 @@ class PageViewController: UIPageViewController, UIPageViewControllerDelegate, UI
     }
     
     
+    func configurePageControl() {
+       // The total number of pages that are available is based on how many available colors we have.
+       pageControl = UIPageControl(frame: CGRect(x: 0,y: UIScreen.main.bounds.maxY - 1000,width: UIScreen.main.bounds.width,height: 50))
+       self.pageControl.numberOfPages = subViewControllers.count
+       self.pageControl.currentPage = 0
+       self.pageControl.tintColor = UIColor.black
+       self.pageControl.pageIndicatorTintColor = UIColor.white
+       self.pageControl.currentPageIndicatorTintColor = UIColor.black
+       self.view.addSubview(pageControl)
+   }
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -50,6 +64,7 @@ class PageViewController: UIPageViewController, UIPageViewControllerDelegate, UI
         // Assign delegates of UIPageViewController
         self.delegate = self
         self.dataSource = self
+        configurePageControl()
         
         //load first subViewController
         setViewControllers([subViewControllers[0]], direction: .forward, animated: true, completion: nil)
