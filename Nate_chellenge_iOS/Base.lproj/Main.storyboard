@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="home-bedroom" translatesAutoresizingMaskIntoConstraints="NO" id="nvs-LZ-yB0">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="420"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="387"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -53,15 +53,25 @@
                                 </items>
                             </toolbar>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="lmb-o7-l6i">
-                                <rect key="frame" x="37" y="433" width="347" height="31"/>
+                                <rect key="frame" x="47" y="395" width="347" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <segments>
                                     <segment title="First"/>
                                     <segment title="Second"/>
                                 </segments>
+                                <connections>
+                                    <action selector="SegmentController:" destination="BYZ-38-t0r" eventType="valueChanged" id="MPp-Pp-7uK"/>
+                                </connections>
                             </segmentedControl>
+                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sOR-Dc-hF4">
+                                <rect key="frame" x="-17" y="433" width="431" height="368"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <connections>
+                                    <segue destination="LgO-WM-vXI" kind="embed" id="M42-nd-zbc"/>
+                                </connections>
+                            </containerView>
                             <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iSC-Yn-dgm">
-                                <rect key="frame" x="0.0" y="471" width="414" height="347"/>
+                                <rect key="frame" x="0.0" y="433" width="414" height="368"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <connections>
                                     <segue destination="eQJ-Nh-Fdm" kind="embed" id="5xC-g0-wwf"/>
@@ -72,7 +82,9 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <connections>
+                        <outlet property="OfficialView" destination="sOR-Dc-hF4" id="qlD-bu-umg"/>
                         <outlet property="PageImageView" destination="nvs-LZ-yB0" id="dyh-Gb-vHd"/>
+                        <outlet property="recommendedView" destination="iSC-Yn-dgm" id="9IV-rI-m2K"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -84,22 +96,42 @@
             <objects>
                 <viewController id="eQJ-Nh-Fdm" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Mb9-MN-L3k">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="347"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="368"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="linkColor"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CIF-3j-ztE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-96" y="475"/>
+            <point key="canvasLocation" x="-340" y="581"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="gGE-X6-PO3">
+            <objects>
+                <viewController id="LgO-WM-vXI" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lkS-Yc-yCE">
+                        <rect key="frame" x="0.0" y="0.0" width="431" height="368"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WzA-qb-3VC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="433" y="581"/>
         </scene>
     </scenes>
     <resources>
         <image name="ellipsis" catalog="system" width="128" height="37"/>
         <image name="home-bedroom" width="1024" height="643.5"/>
         <image name="paperplane.circle" catalog="system" width="128" height="121"/>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="tertiarySystemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

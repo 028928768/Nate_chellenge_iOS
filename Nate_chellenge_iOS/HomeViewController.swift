@@ -8,7 +8,23 @@
 import UIKit
 
 class HomeViewController: UIViewController {
-
+    //MARK: Properties
+    @IBOutlet weak var recommendedView: UIView!
+    @IBOutlet weak var OfficialView: UIView!
+    
+    
+    //MARK: Actions
+    @IBAction func SegmentController(_ sender: UISegmentedControl) {
+        if sender.selectedSegmentIndex == 0 {
+            recommendedView.alpha = 1
+            OfficialView.alpha = 0
+        } else {
+            recommendedView.alpha = 0
+            OfficialView.alpha = 1
+        }
+        
+    }
+    
     @IBOutlet weak var PageImageView: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
