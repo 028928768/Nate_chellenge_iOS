@@ -10,6 +10,7 @@ import UIKit
 class Product {
     
     //MARK: Properties
+  /*  var id: String
     var name: String
     var photo: UIImage?
     var merchant: String
@@ -18,17 +19,30 @@ class Product {
     var createAt: String?
     var updateAt: String?
     var images: [String?]
+    */
     
-    init?(name: String, photo: UIImage?, merchant: String, price: String, url: String?, createAt: String, updateAt: String, images: [String]){
+    var id: String
+    var createdAt: String
+    var updateAt: String
+    var title: String
+    var images: [String?]
+    var url: String
+    var merchant: String
+    var price: String
+    
+  
+    
+    init?(dictionary : [String : AnyObject]) {
+      id = dictionary["id"] as? String ?? ""
+      createdAt = dictionary["createAt"] as? String ?? ""
+      updateAt = dictionary["updateAt"] as? String ?? ""
+      title = dictionary["title"] as? String ?? ""
+      images = dictionary["images"] as? [String] ?? [""]
+      url = dictionary["url"] as? String ?? ""
+      merchant = dictionary["merchant"] as? String ?? ""
+      price = dictionary["price"] as? String ?? "Price"
         
-        self.name = name
-        self.photo = photo
-        self.merchant = merchant
-        self.price = price
-        self.url = url
-        self.createAt = createAt
-        self.updateAt = updateAt
-        self.images = images
         
+
     }
 }

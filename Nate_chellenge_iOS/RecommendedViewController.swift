@@ -6,10 +6,11 @@
 //
 
 import UIKit
+import Alamofire
 
 class RecommendedViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     @IBOutlet weak var tableView: UITableView!
-    
+
     //MARK: Properties
     var products = [Product]()
     
@@ -29,8 +30,8 @@ class RecommendedViewController: UIViewController, UITableViewDelegate, UITableV
         
         let product = products[indexPath.row]
         
-        cell.productNameLabel.text = product.name
-        cell.productImageView.image = product.photo
+       // cell.productNameLabel.text = "product.name"
+       // cell.productImageView.image = "product.photo"
         cell.merchantLabel.text = product.merchant
         cell.priceLabel.text = product.price
         
@@ -51,10 +52,43 @@ class RecommendedViewController: UIViewController, UITableViewDelegate, UITableV
        func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
            // cell selected code here
        }
+/*
+    //MARK: REST API REQUEST GET products
+    func getProductsAPICall(){
+        // send request to URL
+            let urlPath:String = "http://localhost:3000/"
+            var url:NSURL = NSURL(string: urlPath)!
+        var request1: NSMutableURLRequest = NSMutableURLRequest(url: url as URL)
+        request1.httpMethod = "POST"
+            var stringPost = "products"  ///key and value
+
+           let data = stringPost.data(using: String.Encoding.utf8)
+            request1.timeoutInterval = 60
+            request1.httpBody = data
+            request1.httpShouldHandleCookies = false
+
+
+            let queue:OperationQueue = OperationQueue()
+                NSURLConnection.sendAsynchronousRequest(request1 as URLRequest, queue: queue, completionHandler: {(response:URLResponse!, data:NSData!, error:NSError!) -> Void in
+
+                //print  object response
+                println("response =  \(response)")
+                //print response body
+                let responseString = NSString(data: data, encoding: NSUTF8StringEncoding)
+                println("response data = \(responseString)")
+                
+                
+    } */
+        
+   
+                    
+                 
     
+
+        
+   
     
-    
-    
+    /*
 
     //MARK: Private functions
     private func loadSampleProducts(){
@@ -68,13 +102,17 @@ class RecommendedViewController: UIViewController, UITableViewDelegate, UITableV
         
         products += [product1,product1,product1,product1,product1]
     }
+ */
+ 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
         self.tableView.delegate = self
         self.tableView.dataSource = self
-        loadSampleProducts()
+        
+        CallRestProducts()
+        
     }
     
 
@@ -88,4 +126,14 @@ class RecommendedViewController: UIViewController, UITableViewDelegate, UITableV
     }
     */
 
+}; extension RecommendedViewController {
+    func CallRestProducts() {
+       // let request = AF.request("http://localhost:3000/products")
+        let request = AF.request("http://localhost:3000/products", method: .post)
+        
+        request.responseJSON { (data) in
+            print(data)
+        }
+    }
 }
+
