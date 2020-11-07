@@ -89,11 +89,40 @@
                         <outlet property="OfficialView" destination="sOR-Dc-hF4" id="qlD-bu-umg"/>
                         <outlet property="recommendedView" destination="iSC-Yn-dgm" id="9IV-rI-m2K"/>
                         <outlet property="searchBar" destination="OMY-G4-5Pg" id="3RV-XM-27f"/>
+                        <segue destination="K8x-Si-nXW" kind="custom" identifier="feedSegue" customClass="DeckSegue" customModule="DeckTransition" id="fo2-kt-RoM"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="137.68115942028987" y="87.723214285714278"/>
+        </scene>
+        <!--Feed View Controller-->
+        <scene sceneID="Wvs-wz-ekk">
+            <objects>
+                <viewController id="K8x-Si-nXW" customClass="FeedViewController" customModule="Nate_chellenge_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bkH-fJ-lTW">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Rgd-1r-24b">
+                                <rect key="frame" x="34" y="44" width="347" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="First"/>
+                                    <segment title="Second"/>
+                                </segments>
+                                <connections>
+                                    <action selector="SegmentController:" destination="BYZ-38-t0r" eventType="valueChanged" id="Tis-eM-rZL"/>
+                                </connections>
+                            </segmentedControl>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="nbW-Ki-EbF"/>
+                        <color key="backgroundColor" systemColor="linkColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qko-3w-YlC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="965" y="267"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="dRB-Lx-816">
@@ -108,7 +137,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CIF-3j-ztE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-340" y="581"/>
+            <point key="canvasLocation" x="-428" y="761"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="gGE-X6-PO3">
@@ -123,7 +152,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WzA-qb-3VC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="433" y="581"/>
+            <point key="canvasLocation" x="320" y="761"/>
         </scene>
         <!--Page View Controller-->
         <scene sceneID="GGl-fO-fnp">
@@ -131,7 +160,7 @@
                 <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="4DA-ff-2li" customClass="PageViewController" customModule="Nate_chellenge_iOS" customModuleProvider="target" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rFC-ed-A9C" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1000" y="-74"/>
+            <point key="canvasLocation" x="967" y="-240"/>
         </scene>
         <!--View Controller1-->
         <scene sceneID="gD7-ge-4WM">

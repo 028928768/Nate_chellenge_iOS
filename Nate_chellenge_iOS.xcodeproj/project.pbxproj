@@ -3,14 +3,16 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		62BA69B6F71B3B4F38E41E33 /* Pods_Nate_chellenge_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88A72FB8DB5F5A74724F57CD /* Pods_Nate_chellenge_iOS.framework */; };
 		730296772555CA1D008B0FB6 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 730296762555CA1D008B0FB6 /* PageViewController.swift */; };
 		730296AE2555F43D008B0FB6 /* ViewController1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 730296AD2555F43D008B0FB6 /* ViewController1.swift */; };
 		730296B32555F446008B0FB6 /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 730296B22555F446008B0FB6 /* ViewController2.swift */; };
 		730296B82555F458008B0FB6 /* ViewController3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 730296B72555F458008B0FB6 /* ViewController3.swift */; };
+		736418C32556226E000A0B0D /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 736418C22556226E000A0B0D /* FeedViewController.swift */; };
 		73D2CEB225556CA7003894F2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73D2CEB125556CA7003894F2 /* AppDelegate.swift */; };
 		73D2CEB425556CA7003894F2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73D2CEB325556CA7003894F2 /* SceneDelegate.swift */; };
 		73D2CEB625556CA7003894F2 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73D2CEB525556CA7003894F2 /* HomeViewController.swift */; };
@@ -20,6 +22,8 @@
 		73D2CEC125556CA9003894F2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 73D2CEBF25556CA9003894F2 /* LaunchScreen.storyboard */; };
 		73D2CECC25556CA9003894F2 /* Nate_chellenge_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73D2CECB25556CA9003894F2 /* Nate_chellenge_iOSTests.swift */; };
 		73D2CED725556CA9003894F2 /* Nate_chellenge_iOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73D2CED625556CA9003894F2 /* Nate_chellenge_iOSUITests.swift */; };
+		7658BD3BCD24F7783A06702A /* Pods_Nate_chellenge_iOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C70417499FDA657CB3483717 /* Pods_Nate_chellenge_iOSTests.framework */; };
+		90937D93F8CA9A3239816909 /* Pods_Nate_chellenge_iOS_Nate_chellenge_iOSUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58BF5EDB29AA188569AF3711 /* Pods_Nate_chellenge_iOS_Nate_chellenge_iOSUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,10 +44,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		26B8340A7F3E700CC8374C00 /* Pods-Nate_chellenge_iOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nate_chellenge_iOSTests.release.xcconfig"; path = "Target Support Files/Pods-Nate_chellenge_iOSTests/Pods-Nate_chellenge_iOSTests.release.xcconfig"; sourceTree = "<group>"; };
+		58BF5EDB29AA188569AF3711 /* Pods_Nate_chellenge_iOS_Nate_chellenge_iOSUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Nate_chellenge_iOS_Nate_chellenge_iOSUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		634EF433411C6E508B9AFF81 /* Pods-Nate_chellenge_iOS-Nate_chellenge_iOSUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nate_chellenge_iOS-Nate_chellenge_iOSUITests.release.xcconfig"; path = "Target Support Files/Pods-Nate_chellenge_iOS-Nate_chellenge_iOSUITests/Pods-Nate_chellenge_iOS-Nate_chellenge_iOSUITests.release.xcconfig"; sourceTree = "<group>"; };
+		6C2FF26DAFBAF97B2ABFB742 /* Pods-Nate_chellenge_iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nate_chellenge_iOS.release.xcconfig"; path = "Target Support Files/Pods-Nate_chellenge_iOS/Pods-Nate_chellenge_iOS.release.xcconfig"; sourceTree = "<group>"; };
 		730296762555CA1D008B0FB6 /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
 		730296AD2555F43D008B0FB6 /* ViewController1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController1.swift; sourceTree = "<group>"; };
 		730296B22555F446008B0FB6 /* ViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
 		730296B72555F458008B0FB6 /* ViewController3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController3.swift; sourceTree = "<group>"; };
+		736418C22556226E000A0B0D /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		73D2CEAE25556CA7003894F2 /* Nate_chellenge_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nate_chellenge_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		73D2CEB125556CA7003894F2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		73D2CEB325556CA7003894F2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -59,6 +68,11 @@
 		73D2CED225556CA9003894F2 /* Nate_chellenge_iOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Nate_chellenge_iOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		73D2CED625556CA9003894F2 /* Nate_chellenge_iOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nate_chellenge_iOSUITests.swift; sourceTree = "<group>"; };
 		73D2CED825556CA9003894F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		88A72FB8DB5F5A74724F57CD /* Pods_Nate_chellenge_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Nate_chellenge_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A053CC80853EDB81C9A13A91 /* Pods-Nate_chellenge_iOS-Nate_chellenge_iOSUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nate_chellenge_iOS-Nate_chellenge_iOSUITests.debug.xcconfig"; path = "Target Support Files/Pods-Nate_chellenge_iOS-Nate_chellenge_iOSUITests/Pods-Nate_chellenge_iOS-Nate_chellenge_iOSUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		C70417499FDA657CB3483717 /* Pods_Nate_chellenge_iOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Nate_chellenge_iOSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E43C7FB5963F2A657EF0D7AD /* Pods-Nate_chellenge_iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nate_chellenge_iOS.debug.xcconfig"; path = "Target Support Files/Pods-Nate_chellenge_iOS/Pods-Nate_chellenge_iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		F6C64579966D6B9FF8066EB1 /* Pods-Nate_chellenge_iOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nate_chellenge_iOSTests.debug.xcconfig"; path = "Target Support Files/Pods-Nate_chellenge_iOSTests/Pods-Nate_chellenge_iOSTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				62BA69B6F71B3B4F38E41E33 /* Pods_Nate_chellenge_iOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -73,6 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7658BD3BCD24F7783A06702A /* Pods_Nate_chellenge_iOSTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,12 +96,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				90937D93F8CA9A3239816909 /* Pods_Nate_chellenge_iOS_Nate_chellenge_iOSUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3CF193428142D7F633B09436 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E43C7FB5963F2A657EF0D7AD /* Pods-Nate_chellenge_iOS.debug.xcconfig */,
+				6C2FF26DAFBAF97B2ABFB742 /* Pods-Nate_chellenge_iOS.release.xcconfig */,
+				A053CC80853EDB81C9A13A91 /* Pods-Nate_chellenge_iOS-Nate_chellenge_iOSUITests.debug.xcconfig */,
+				634EF433411C6E508B9AFF81 /* Pods-Nate_chellenge_iOS-Nate_chellenge_iOSUITests.release.xcconfig */,
+				F6C64579966D6B9FF8066EB1 /* Pods-Nate_chellenge_iOSTests.debug.xcconfig */,
+				26B8340A7F3E700CC8374C00 /* Pods-Nate_chellenge_iOSTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		73D2CEA525556CA7003894F2 = {
 			isa = PBXGroup;
 			children = (
@@ -93,6 +123,8 @@
 				73D2CECA25556CA9003894F2 /* Nate_chellenge_iOSTests */,
 				73D2CED525556CA9003894F2 /* Nate_chellenge_iOSUITests */,
 				73D2CEAF25556CA7003894F2 /* Products */,
+				3CF193428142D7F633B09436 /* Pods */,
+				75AB0EF2C0F60A1C9207A8EE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -114,6 +146,7 @@
 				73D2CEB525556CA7003894F2 /* HomeViewController.swift */,
 				73D2CEB725556CA7003894F2 /* Main.storyboard */,
 				730296AD2555F43D008B0FB6 /* ViewController1.swift */,
+				736418C22556226E000A0B0D /* FeedViewController.swift */,
 				730296B22555F446008B0FB6 /* ViewController2.swift */,
 				730296B72555F458008B0FB6 /* ViewController3.swift */,
 				730296762555CA1D008B0FB6 /* PageViewController.swift */,
@@ -143,6 +176,16 @@
 			path = Nate_chellenge_iOSUITests;
 			sourceTree = "<group>";
 		};
+		75AB0EF2C0F60A1C9207A8EE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				88A72FB8DB5F5A74724F57CD /* Pods_Nate_chellenge_iOS.framework */,
+				58BF5EDB29AA188569AF3711 /* Pods_Nate_chellenge_iOS_Nate_chellenge_iOSUITests.framework */,
+				C70417499FDA657CB3483717 /* Pods_Nate_chellenge_iOSTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -150,9 +193,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 73D2CEDB25556CA9003894F2 /* Build configuration list for PBXNativeTarget "Nate_chellenge_iOS" */;
 			buildPhases = (
+				BA47AF3D84F1D139F8320EA8 /* [CP] Check Pods Manifest.lock */,
 				73D2CEAA25556CA7003894F2 /* Sources */,
 				73D2CEAB25556CA7003894F2 /* Frameworks */,
 				73D2CEAC25556CA7003894F2 /* Resources */,
+				FD90F1BE478E4AD67EC5A5A0 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -167,6 +212,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 73D2CEDE25556CA9003894F2 /* Build configuration list for PBXNativeTarget "Nate_chellenge_iOSTests" */;
 			buildPhases = (
+				C851D59EF473E3F22E88C395 /* [CP] Check Pods Manifest.lock */,
 				73D2CEC325556CA9003894F2 /* Sources */,
 				73D2CEC425556CA9003894F2 /* Frameworks */,
 				73D2CEC525556CA9003894F2 /* Resources */,
@@ -185,9 +231,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 73D2CEE125556CA9003894F2 /* Build configuration list for PBXNativeTarget "Nate_chellenge_iOSUITests" */;
 			buildPhases = (
+				1FDC491A057989BC85E6A516 /* [CP] Check Pods Manifest.lock */,
 				73D2CECE25556CA9003894F2 /* Sources */,
 				73D2CECF25556CA9003894F2 /* Frameworks */,
 				73D2CED025556CA9003894F2 /* Resources */,
+				AAA2C18FA8411C4A576905FD /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -268,12 +316,116 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1FDC491A057989BC85E6A516 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Nate_chellenge_iOS-Nate_chellenge_iOSUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AAA2C18FA8411C4A576905FD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Nate_chellenge_iOS-Nate_chellenge_iOSUITests/Pods-Nate_chellenge_iOS-Nate_chellenge_iOSUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Nate_chellenge_iOS-Nate_chellenge_iOSUITests/Pods-Nate_chellenge_iOS-Nate_chellenge_iOSUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Nate_chellenge_iOS-Nate_chellenge_iOSUITests/Pods-Nate_chellenge_iOS-Nate_chellenge_iOSUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BA47AF3D84F1D139F8320EA8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Nate_chellenge_iOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C851D59EF473E3F22E88C395 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Nate_chellenge_iOSTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FD90F1BE478E4AD67EC5A5A0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Nate_chellenge_iOS/Pods-Nate_chellenge_iOS-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Nate_chellenge_iOS/Pods-Nate_chellenge_iOS-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Nate_chellenge_iOS/Pods-Nate_chellenge_iOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		73D2CEAA25556CA7003894F2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				730296B32555F446008B0FB6 /* ViewController2.swift in Sources */,
+				736418C32556226E000A0B0D /* FeedViewController.swift in Sources */,
 				730296AE2555F43D008B0FB6 /* ViewController1.swift in Sources */,
 				730296B82555F458008B0FB6 /* ViewController3.swift in Sources */,
 				73D2CEB625556CA7003894F2 /* HomeViewController.swift in Sources */,
@@ -453,6 +605,7 @@
 		};
 		73D2CEDC25556CA9003894F2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E43C7FB5963F2A657EF0D7AD /* Pods-Nate_chellenge_iOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -472,6 +625,7 @@
 		};
 		73D2CEDD25556CA9003894F2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6C2FF26DAFBAF97B2ABFB742 /* Pods-Nate_chellenge_iOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -491,6 +645,7 @@
 		};
 		73D2CEDF25556CA9003894F2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F6C64579966D6B9FF8066EB1 /* Pods-Nate_chellenge_iOSTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -513,6 +668,7 @@
 		};
 		73D2CEE025556CA9003894F2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 26B8340A7F3E700CC8374C00 /* Pods-Nate_chellenge_iOSTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -535,6 +691,7 @@
 		};
 		73D2CEE225556CA9003894F2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A053CC80853EDB81C9A13A91 /* Pods-Nate_chellenge_iOS-Nate_chellenge_iOSUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -555,6 +712,7 @@
 		};
 		73D2CEE325556CA9003894F2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 634EF433411C6E508B9AFF81 /* Pods-Nate_chellenge_iOS-Nate_chellenge_iOSUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
