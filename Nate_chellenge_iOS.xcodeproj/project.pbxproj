@@ -12,6 +12,9 @@
 		730296AE2555F43D008B0FB6 /* ViewController1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 730296AD2555F43D008B0FB6 /* ViewController1.swift */; };
 		730296B32555F446008B0FB6 /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 730296B22555F446008B0FB6 /* ViewController2.swift */; };
 		730296B82555F458008B0FB6 /* ViewController3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 730296B72555F458008B0FB6 /* ViewController3.swift */; };
+		7343EAF22556C85D00B6679E /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7343EAF12556C85D00B6679E /* Product.swift */; };
+		7343EAF72556C88400B6679E /* ProductTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7343EAF62556C88400B6679E /* ProductTableViewCell.swift */; };
+		7343EAFC2556CDD000B6679E /* RecommendedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7343EAFB2556CDD000B6679E /* RecommendedViewController.swift */; };
 		736418C32556226E000A0B0D /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 736418C22556226E000A0B0D /* FeedViewController.swift */; };
 		73D2CEB225556CA7003894F2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73D2CEB125556CA7003894F2 /* AppDelegate.swift */; };
 		73D2CEB425556CA7003894F2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73D2CEB325556CA7003894F2 /* SceneDelegate.swift */; };
@@ -52,6 +55,9 @@
 		730296AD2555F43D008B0FB6 /* ViewController1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController1.swift; sourceTree = "<group>"; };
 		730296B22555F446008B0FB6 /* ViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
 		730296B72555F458008B0FB6 /* ViewController3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController3.swift; sourceTree = "<group>"; };
+		7343EAF12556C85D00B6679E /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		7343EAF62556C88400B6679E /* ProductTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductTableViewCell.swift; sourceTree = "<group>"; };
+		7343EAFB2556CDD000B6679E /* RecommendedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendedViewController.swift; sourceTree = "<group>"; };
 		736418C22556226E000A0B0D /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		73D2CEAE25556CA7003894F2 /* Nate_chellenge_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nate_chellenge_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		73D2CEB125556CA7003894F2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -145,8 +151,11 @@
 				73D2CEB325556CA7003894F2 /* SceneDelegate.swift */,
 				73D2CEB525556CA7003894F2 /* HomeViewController.swift */,
 				73D2CEB725556CA7003894F2 /* Main.storyboard */,
-				730296AD2555F43D008B0FB6 /* ViewController1.swift */,
+				7343EAF12556C85D00B6679E /* Product.swift */,
+				7343EAFB2556CDD000B6679E /* RecommendedViewController.swift */,
 				736418C22556226E000A0B0D /* FeedViewController.swift */,
+				7343EAF62556C88400B6679E /* ProductTableViewCell.swift */,
+				730296AD2555F43D008B0FB6 /* ViewController1.swift */,
 				730296B22555F446008B0FB6 /* ViewController2.swift */,
 				730296B72555F458008B0FB6 /* ViewController3.swift */,
 				730296762555CA1D008B0FB6 /* PageViewController.swift */,
@@ -428,9 +437,12 @@
 				736418C32556226E000A0B0D /* FeedViewController.swift in Sources */,
 				730296AE2555F43D008B0FB6 /* ViewController1.swift in Sources */,
 				730296B82555F458008B0FB6 /* ViewController3.swift in Sources */,
+				7343EAFC2556CDD000B6679E /* RecommendedViewController.swift in Sources */,
 				73D2CEB625556CA7003894F2 /* HomeViewController.swift in Sources */,
 				73D2CEB225556CA7003894F2 /* AppDelegate.swift in Sources */,
 				73D2CEB425556CA7003894F2 /* SceneDelegate.swift in Sources */,
+				7343EAF72556C88400B6679E /* ProductTableViewCell.swift in Sources */,
+				7343EAF22556C85D00B6679E /* Product.swift in Sources */,
 				73D2CEBC25556CA7003894F2 /* Nate_chellenge_iOS.xcdatamodeld in Sources */,
 				730296772555CA1D008B0FB6 /* PageViewController.swift in Sources */,
 			);

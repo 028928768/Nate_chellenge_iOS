@@ -51,7 +51,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <segments>
                                     <segment title="Recommended"/>
-                                    <segment title="Favourite"/>
+                                    <segment title="Best Sellings"/>
                                 </segments>
                                 <connections>
                                     <action selector="SegmentController:" destination="BYZ-38-t0r" eventType="valueChanged" id="MPp-Pp-7uK"/>
@@ -89,7 +89,7 @@
                         <outlet property="OfficialView" destination="sOR-Dc-hF4" id="qlD-bu-umg"/>
                         <outlet property="recommendedView" destination="iSC-Yn-dgm" id="9IV-rI-m2K"/>
                         <outlet property="searchBar" destination="OMY-G4-5Pg" id="3RV-XM-27f"/>
-                        <segue destination="K8x-Si-nXW" kind="custom" identifier="feedSegue" customClass="DeckSegue" customModule="DeckTransition" id="fo2-kt-RoM"/>
+                        <segue destination="K8x-Si-nXW" kind="custom" identifier="feedSegue" id="fo2-kt-RoM"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -140,7 +140,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qko-3w-YlC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="963.76811594202911" y="265.84821428571428"/>
+            <point key="canvasLocation" x="1310" y="260"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="OJE-8v-BhA">
@@ -191,35 +191,59 @@
             </objects>
             <point key="canvasLocation" x="2218.840579710145" y="306.69642857142856"/>
         </scene>
-        <!--View Controller-->
+        <!--Recommended View Controller-->
         <scene sceneID="dRB-Lx-816">
             <objects>
-                <viewController id="eQJ-Nh-Fdm" sceneMemberID="viewController">
+                <viewController id="eQJ-Nh-Fdm" customClass="RecommendedViewController" customModule="Nate_chellenge_iOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Mb9-MN-L3k">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="508"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="eT0-G4-mqF">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="200" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="eT0-G4-mqF">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="508"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="121" id="dK8-UH-vLt">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="121"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ProductTableViewCell" rowHeight="200" id="dK8-UH-vLt" customClass="ProductTableViewCell" customModule="Nate_chellenge_iOS" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="200"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="dK8-UH-vLt" id="d8A-j8-wX9">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="121"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="200"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="TitleCellLabel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G3o-Uu-ObL">
-                                                    <rect key="frame" x="20" y="0.0" width="155" height="30"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ProductName" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G3o-Uu-ObL">
+                                                    <rect key="frame" x="20" y="138" width="217" height="30"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="25"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="defaultProduct" translatesAutoresizingMaskIntoConstraints="NO" id="PP9-Sw-Edb">
+                                                    <rect key="frame" x="85" y="0.0" width="250" height="140"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="MerchantLabel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1YS-gQ-I3h">
+                                                    <rect key="frame" x="32" y="168" width="187" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Price" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MYk-iS-W8W">
+                                                    <rect key="frame" x="281" y="148" width="113" height="32"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="merchantLabel" destination="1YS-gQ-I3h" id="x39-i3-32Q"/>
+                                            <outlet property="priceLabel" destination="MYk-iS-W8W" id="pH6-sa-LqT"/>
+                                            <outlet property="productImageView" destination="PP9-Sw-Edb" id="rlC-ab-tXo"/>
+                                            <outlet property="productNameLabel" destination="G3o-Uu-ObL" id="z1N-D2-3Jm"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -227,10 +251,13 @@
                         <viewLayoutGuide key="safeArea" id="uHH-By-p0i"/>
                         <color key="backgroundColor" systemColor="labelColor"/>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="eT0-G4-mqF" id="n0i-ma-x7b"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CIF-3j-ztE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-428.98550724637687" y="760.04464285714278"/>
+            <point key="canvasLocation" x="-710.14492753623199" y="626.78571428571422"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="gGE-X6-PO3">
@@ -245,7 +272,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WzA-qb-3VC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="346" y="962"/>
+            <point key="canvasLocation" x="-404" y="1250"/>
         </scene>
         <!--Page View Controller-->
         <scene sceneID="GGl-fO-fnp">
@@ -362,6 +389,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="defaultProduct" width="256" height="256"/>
         <image name="ellipsis" catalog="system" width="128" height="37"/>
         <image name="home-bedroom" width="1024" height="643.5"/>
         <image name="home-clothes" width="484" height="408.5"/>
