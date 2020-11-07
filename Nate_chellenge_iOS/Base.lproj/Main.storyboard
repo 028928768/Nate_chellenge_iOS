@@ -89,12 +89,12 @@
                         <outlet property="OfficialView" destination="sOR-Dc-hF4" id="qlD-bu-umg"/>
                         <outlet property="recommendedView" destination="iSC-Yn-dgm" id="9IV-rI-m2K"/>
                         <outlet property="searchBar" destination="OMY-G4-5Pg" id="3RV-XM-27f"/>
-                        <segue destination="K8x-Si-nXW" kind="custom" identifier="feedSegue" id="fo2-kt-RoM"/>
+                        <segue destination="K8x-Si-nXW" kind="custom" identifier="feedSegue" customClass="DeckSegue" customModule="DeckTransition" id="fo2-kt-RoM"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="137.68115942028987" y="87.723214285714278"/>
+            <point key="canvasLocation" x="62" y="174"/>
         </scene>
         <!--Feed View Controller-->
         <scene sceneID="Wvs-wz-ekk">
@@ -142,7 +142,7 @@
             </objects>
             <point key="canvasLocation" x="1310" y="260"/>
         </scene>
-        <!--View Controller-->
+        <!--Details-->
         <scene sceneID="OJE-8v-BhA">
             <objects>
                 <viewController id="BqA-v9-m5C" sceneMemberID="viewController">
@@ -157,7 +157,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lxl-W2-agY">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="defaultProduct" translatesAutoresizingMaskIntoConstraints="NO" id="lxl-W2-agY">
                                 <rect key="frame" x="0.0" y="97" width="414" height="456"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -186,10 +186,11 @@
                         <viewLayoutGuide key="safeArea" id="vg2-nu-XoN"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Details" id="bQm-Mx-J1k"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0tU-Og-Tyb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2218.840579710145" y="306.69642857142856"/>
+            <point key="canvasLocation" x="1637.68115942029" y="958.25892857142856"/>
         </scene>
         <!--Recommended View Controller-->
         <scene sceneID="dRB-Lx-816">
