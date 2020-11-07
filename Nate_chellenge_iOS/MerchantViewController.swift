@@ -1,5 +1,5 @@
 //
-//  RecommendedViewController.swift
+//  MerchantViewController.swift
 //  Nate_chellenge_iOS
 //
 //  Created by Kantachat Puagkajee on 07/11/2020.
@@ -7,37 +7,37 @@
 
 import UIKit
 
-class RecommendedViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
-    @IBOutlet weak var tableView: UITableView!
-    
+class MerchantViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+
+
     //MARK: Properties
-    var products = [Product]()
+    @IBOutlet weak var tableView: UITableView!
+    var merchants = [Merchant]()
     
-    //MARK: TableViewController delegate
+    
+    //MARK: TableViewDelegate and DataSource
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return products.count
+        return merchants.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        
-        let cellIdentifier = "ProductTableViewCell"
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as? ProductTableViewCell else {
-            fatalError("The dequeued cell is not an instance of ProductTableViewCell")
+        let cellIdentifier = "MerchantTableViewCell"
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as? MerchantTableViewCell else {
+            fatalError("The dequeued cell is not an instance of MerchantTableViewCell")
         }
         
         
-        let product = products[indexPath.row]
+        let merchant = merchants[indexPath.row]
         
-        cell.productNameLabel.text = product.name
-        cell.productImageView.image = product.photo
-        cell.merchantLabel.text = product.merchant
-        cell.priceLabel.text = product.price
+        cell.NoLabel.text = merchant.no
+        cell.merchantLabel.text = merchant.merchant
+        cell.merchantImageView.image = merchant.photo
+        cell.ratingLabel.text = merchant.rating
+        
         
         return cell
     }
-    
-   
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
            return 1
@@ -52,21 +52,17 @@ class RecommendedViewController: UIViewController, UITableViewDelegate, UITableV
            // cell selected code here
        }
     
-    
-    
-    
-
     //MARK: Private functions
-    private func loadSampleProducts(){
+    private func loadSampleMerchants(){
         let defaultProductPhoto = UIImage(named: "defaultProduct")
         
-        guard let product1 = Product(name: "Product Name", photo: defaultProductPhoto, merchant: "Simon,Ltd", price: "315 B", url: nil, createAt: "20-10-2020", updateAt: "19-20-20", images: [
-            "https://media-live.byredo.com/media/catalog/product/optimized/8/5/8529df057ba542031c76db2227539212ccfb359560579b72c48c9f95905e385f/mob_la-selection-nomade-3x12-ml_1_1.jpg"
-          ]) else {
-            fatalError("Unable to load product")
-        }
         
-        products += [product1,product1,product1,product1,product1]
+        guard let merchant1 = Merchant(no: "1.", photo: defaultProductPhoto, merchant: "Simon, Ltd", rating: "rating: 5") else {
+            fatalError("Unable to load merchants")
+        }
+     
+        
+        merchants += [merchant1,merchant1,merchant1,merchant1,merchant1]
     }
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -74,7 +70,7 @@ class RecommendedViewController: UIViewController, UITableViewDelegate, UITableV
         // Do any additional setup after loading the view.
         self.tableView.delegate = self
         self.tableView.dataSource = self
-        loadSampleProducts()
+        loadSampleMerchants()
     }
     
 

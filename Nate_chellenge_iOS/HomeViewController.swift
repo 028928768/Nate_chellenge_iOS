@@ -7,11 +7,12 @@
 
 import UIKit
 
-class HomeViewController: UIViewController {
+class HomeViewController: UIViewController, UISearchBarDelegate {
     //MARK: Properties
     @IBOutlet weak var recommendedView: UIView!
     @IBOutlet weak var OfficialView: UIView!
     @IBOutlet weak var searchBar: UISearchBar!
+    @IBOutlet weak var UISearchBar: UISearchBar!
     
  
     //MARK: Actions
@@ -27,6 +28,23 @@ class HomeViewController: UIViewController {
         
     }
     
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        performSegue(withIdentifier: "feedSegue", sender: self)
+        UISearchBar.resignFirstResponder()
+    }
+    func searchBarResultsListButtonClicked(_ searchBar: UISearchBar) {
+        performSegue(withIdentifier: "feedSegue", sender: self)
+        UISearchBar.resignFirstResponder()
+    }
+    
+    func searchBarTextDidBeginEditing(_ searchBar: UISearchBar) {
+        performSegue(withIdentifier: "feedSegue", sender: self)
+        UISearchBar.resignFirstResponder()
+    }
+    func searchBarTextDidEndEditing(_ searchBar: UISearchBar) {
+        UISearchBar.resignFirstResponder()
+    }
+    
     @IBAction func expandButton(_ sender: Any) {
          performSegue(withIdentifier: "feedSegue", sender: self)
     }
@@ -34,6 +52,7 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        self.UISearchBar.delegate = self
        
        
       

@@ -17,8 +17,9 @@ class Product {
     var url: String?
     var createAt: String?
     var updateAt: String?
+    var images: [String?]
     
-    init?(name: String, photo: UIImage?, merchant: String, price: String, url: String?, createAt: String, updateAt: String){
+    init?(name: String, photo: UIImage?, merchant: String, price: String, url: String?, createAt: String, updateAt: String, images: [String]){
         
         self.name = name
         self.photo = photo
@@ -27,6 +28,7 @@ class Product {
         self.url = url
         self.createAt = createAt
         self.updateAt = updateAt
+        self.images = images
         
     }
 }
