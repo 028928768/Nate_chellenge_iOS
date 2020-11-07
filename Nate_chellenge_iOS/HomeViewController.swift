@@ -19,7 +19,7 @@ class HomeViewController: UIViewController {
         if sender.selectedSegmentIndex == 0 {
             recommendedView.alpha = 1
             OfficialView.alpha = 0
-           // performSegue(withIdentifier: "feedSegue", sender: self)
+           
         } else {
             recommendedView.alpha = 0
             OfficialView.alpha = 1
@@ -27,6 +27,9 @@ class HomeViewController: UIViewController {
         
     }
     
+    @IBAction func expandButton(_ sender: Any) {
+         performSegue(withIdentifier: "feedSegue", sender: self)
+    }
     @IBOutlet weak var PageImageView: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
