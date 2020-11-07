@@ -19,7 +19,7 @@ class HomeViewController: UIViewController {
         if sender.selectedSegmentIndex == 0 {
             recommendedView.alpha = 1
             OfficialView.alpha = 0
-            performSegue(withIdentifier: "feedSegue", sender: self)
+           // performSegue(withIdentifier: "feedSegue", sender: self)
         } else {
             recommendedView.alpha = 0
             OfficialView.alpha = 1
