@@ -57,7 +57,7 @@ class MerchantViewController: UIViewController, UITableViewDelegate, UITableView
         let defaultProductPhoto = UIImage(named: "defaultProduct")
         
         
-        guard let merchant1 = Merchant(no: "1.", photo: defaultProductPhoto, merchant: "Simon, Ltd", rating: "rating: 5") else {
+        guard let merchant1 = Merchant(no: "1.", photo: defaultProductPhoto, merchant: "Apple, Ltd", rating: "rating: 5") else {
             fatalError("Unable to load merchants")
         }
      

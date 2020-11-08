@@ -7,16 +7,21 @@
 
 import UIKit
 import Alamofire
+import SwiftyJSON
 
 class RecommendedViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     @IBOutlet weak var tableView: UITableView!
-
+   // var products: [Product] = []
+   // var items: [Displayable] = []
     //MARK: Properties
-    var products = [Product]()
+  //  var products = [Product]()
+    var product_titles = [String]()
+    var product_merchants = [String]()
     
     //MARK: TableViewController delegate
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return products.count
+   //     return products.count
+        return 10
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -28,12 +33,12 @@ class RecommendedViewController: UIViewController, UITableViewDelegate, UITableV
         }
         
         
-        let product = products[indexPath.row]
+//        let product = products[indexPath.row]
         
        // cell.productNameLabel.text = "product.name"
        // cell.productImageView.image = "product.photo"
-        cell.merchantLabel.text = product.merchant
-        cell.priceLabel.text = product.price
+       // cell.merchantLabel.text = product.merchant
+      //  cell.priceLabel.text = product.price
         
         return cell
     }
@@ -127,13 +132,20 @@ class RecommendedViewController: UIViewController, UITableViewDelegate, UITableV
     */
 
 }; extension RecommendedViewController {
-    func CallRestProducts() {
-       // let request = AF.request("http://localhost:3000/products")
-        let request = AF.request("http://localhost:3000/products", method: .post)
-        
+      func CallRestProducts() {
+       let request = AF.request("http://localhost:3000/products", method: .post)
         request.responseJSON { (data) in
-            print(data)
+            let myJson = try? JSON(data: data.data!)
+           // print(myJson)
+            for i in myJson!{
+            
+            }
+            
         }
     }
+    
+
+    
+   
 }
 

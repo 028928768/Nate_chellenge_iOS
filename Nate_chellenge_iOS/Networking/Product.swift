@@ -7,6 +7,69 @@
 
 import UIKit
 
+struct Product: Decodable {
+  let id: String
+  let createAt: String
+  let updateAt: String
+  let title: String
+  let images: [String]
+  let url: String
+  let merchant: String
+  
+  enum CodingKeys: String, CodingKey {
+    case id
+    case createAt
+    case updateAt
+    case title
+    case images
+    case url
+    case merchant 
+  }
+}
+
+extension Product: Displayable {
+    var imagesUrl: [String] {
+        images
+    }
+    
+    var titleLabel: String {
+        title
+    }
+    
+    var idLabel: String {
+        id
+    }
+    
+    var merchantLabel: String {
+        merchant
+    }
+    
+    
+    var urlLabel: String {
+        url
+    }
+    
+    var createdLabel: String {
+        createAt
+    }
+    
+    var updatedLabel: String {
+        updateAt
+    }
+    
+ 
+    
+    
+ 
+}
+
+
+
+
+
+
+/*
+
 class Product {
     
     //MARK: Properties
@@ -20,7 +83,10 @@ class Product {
     var updateAt: String?
     var images: [String?]
     */
-    
+  
+    /*
+     
+     */
     var id: String
     var createdAt: String
     var updateAt: String
@@ -46,3 +112,5 @@ class Product {
 
     }
 }
+
+ */
