@@ -39,6 +39,12 @@ class DetailViewController: UIViewController {
         
     }
     
+    //MARK: UnwindSegue
+    @IBAction func unWindSegue(_ sender: UIStoryboard) {
+        dismiss(animated: true, completion: nil)
+    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
        
