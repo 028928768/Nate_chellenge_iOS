@@ -141,7 +141,7 @@
             <objects>
                 <viewController modalPresentationStyle="fullScreen" id="BqA-v9-m5C" customClass="DetailViewController" customModule="Nate_chellenge_iOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fE0-LJ-gdN">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="824"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="878"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Product_Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hGS-g9-KdT">
@@ -251,7 +251,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0tU-Og-Tyb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2547.826086956522" y="958.25892857142856"/>
+            <point key="canvasLocation" x="2254" y="994"/>
         </scene>
         <!--Recommended View Controller-->
         <scene sceneID="dRB-Lx-816">
@@ -305,7 +305,7 @@
                                             <outlet property="priceLabel" destination="MYk-iS-W8W" id="pH6-sa-LqT"/>
                                             <outlet property="productImageView" destination="PP9-Sw-Edb" id="rlC-ab-tXo"/>
                                             <outlet property="productNameLabel" destination="G3o-Uu-ObL" id="z1N-D2-3Jm"/>
-                                            <segue destination="Os0-cy-s8b" kind="show" id="Exc-Rw-Sqc"/>
+                                            <segue destination="BqA-v9-m5C" kind="show" identifier="productDetailSegue" id="a2j-zf-y52"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -502,25 +502,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GNs-NB-KmN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3232" y="-402"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="JbX-PJ-cAc">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Os0-cy-s8b" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationItem key="navigationItem" id="rAi-6s-nHt"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="bbe-jX-kZ0">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="BqA-v9-m5C" kind="relationship" relationship="rootViewController" id="8bf-DG-0CT"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="C4a-s5-bH3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1637.68115942029" y="958.25892857142856"/>
         </scene>
     </scenes>
     <resources>

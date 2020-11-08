@@ -13,6 +13,8 @@ class RecommendedViewController: UIViewController, UITableViewDelegate, UITableV
     @IBOutlet weak var tableView: UITableView!
     //MARK: Properties
     var items: [Displayable] = [] //products objects retreived from server
+    var selectedItem: Displayable? // prepare for Segue selectedCell to detailsViewcontroller
+
 
 
     
@@ -36,14 +38,6 @@ class RecommendedViewController: UIViewController, UITableViewDelegate, UITableV
      //   cell.productImageView.image = item.imagesUrl ----> download image from url and store into each cell!
         cell.merchantLabel.text = item.merchantLabel
         cell.priceLabel.text = "£"
-
-        
-//        let product = products[indexPath.row]
-        
-       // cell.productNameLabel.text = "product.name"
-       // cell.productImageView.image = "product.photo"
-       // cell.merchantLabel.text = product.merchant
-      //  cell.priceLabel.text = product.price
         
         return cell
     }
@@ -53,15 +47,17 @@ class RecommendedViewController: UIViewController, UITableViewDelegate, UITableV
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
            return 1
        }
+    func tableView(_ tableView: UITableView, did indexPath: IndexPath) -> IndexPath? {
+        selectedItem = items[indexPath.row]
+        return indexPath
+     
+    }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+       // performSegue(withIdentifier: "productDetailSegue", sender: self)
+    }
+  
 
-       func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-           // your cell coding
-           return UITableViewCell()
-       }
-
-       func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-           // cell selected code here
-       }
+  
 /*
     //MARK: REST API REQUEST GET products
     func getProductsAPICall(){
@@ -91,28 +87,6 @@ class RecommendedViewController: UIViewController, UITableViewDelegate, UITableV
     } */
         
    
-                    
-                 
-    
-
-        
-   
-    
-    /*
-
-    //MARK: Private functions
-    private func loadSampleProducts(){
-        let defaultProductPhoto = UIImage(named: "defaultProduct")
-        
-        guard let product1 = Product(name: "Product Name", photo: defaultProductPhoto, merchant: "Simon,Ltd", price: "315 B", url: nil, createAt: "20-10-2020", updateAt: "19-20-20", images: [
-            "https://media-live.byredo.com/media/catalog/product/optimized/8/5/8529df057ba542031c76db2227539212ccfb359560579b72c48c9f95905e385f/mob_la-selection-nomade-3x12-ml_1_1.jpg"
-          ]) else {
-            fatalError("Unable to load product")
-        }
-        
-        products += [product1,product1,product1,product1,product1]
-    }
- */
  
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -128,15 +102,27 @@ class RecommendedViewController: UIViewController, UITableViewDelegate, UITableV
     }
     
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        super.prepare(for: segue, sender: sender)
+        if (segue.identifier == "productDetailSegue") {
+            // pass selectedProduct to DetailProductViewController
+          
+            guard let destinationVC = segue.destination as? DetailViewController else {
+              return
+            }
+            destinationVC.data = selectedItem
+            destinationVC.passedString = "PASS!"
+        
+            
+            }
+       
+        
     }
-    */
+    
 
 }; extension RecommendedViewController {
     
