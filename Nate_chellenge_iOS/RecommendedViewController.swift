@@ -47,10 +47,10 @@ class RecommendedViewController: UIViewController, UITableViewDelegate, UITableV
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
            return 1
        }
-    func tableView(_ tableView: UITableView, did indexPath: IndexPath) -> IndexPath? {
-        selectedItem = items[indexPath.row]
-        return indexPath
-     
+    
+    func tableView(_ tableView: UITableView, willSelectRowAt indexPath: IndexPath) -> IndexPath? {
+      selectedItem = items[indexPath.row]
+      return indexPath
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
        // performSegue(withIdentifier: "productDetailSegue", sender: self)
