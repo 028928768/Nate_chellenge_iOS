@@ -9,8 +9,8 @@ import UIKit
 
 struct Product: Decodable {
   let id: String
-  let createAt: String
-  let updateAt: String
+  let createdAt: String
+  let updatedAt: String
   let title: String
   let images: [String]
   let url: String
@@ -18,8 +18,8 @@ struct Product: Decodable {
   
   enum CodingKeys: String, CodingKey {
     case id
-    case createAt
-    case updateAt
+    case createdAt
+    case updatedAt
     case title
     case images
     case url
@@ -50,11 +50,11 @@ extension Product: Displayable {
     }
     
     var createdLabel: String {
-        createAt
+        createdAt
     }
     
     var updatedLabel: String {
-        updateAt
+        updatedAt
     }
     
  

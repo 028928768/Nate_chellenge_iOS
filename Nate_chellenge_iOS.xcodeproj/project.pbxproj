@@ -21,7 +21,6 @@
 		7343EB3325576E7300B6679E /* Displayable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7343EB3225576E7300B6679E /* Displayable.swift */; };
 		7343EB37255773CC00B6679E /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7343EB36255773CC00B6679E /* DetailViewController.swift */; };
 		7343EB3B2557777D00B6679E /* Products.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7343EB3A2557777D00B6679E /* Products.swift */; };
-		7343EB5B2557B03B00B6679E /* ProductModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7343EB5A2557B03B00B6679E /* ProductModel.swift */; };
 		736418C32556226E000A0B0D /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 736418C22556226E000A0B0D /* FeedViewController.swift */; };
 		73D2CEB225556CA7003894F2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73D2CEB125556CA7003894F2 /* AppDelegate.swift */; };
 		73D2CEB425556CA7003894F2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73D2CEB325556CA7003894F2 /* SceneDelegate.swift */; };
@@ -84,7 +83,6 @@
 		7343EB3225576E7300B6679E /* Displayable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Displayable.swift; sourceTree = "<group>"; };
 		7343EB36255773CC00B6679E /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		7343EB3A2557777D00B6679E /* Products.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Products.swift; sourceTree = "<group>"; };
-		7343EB5A2557B03B00B6679E /* ProductModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductModel.swift; sourceTree = "<group>"; };
 		736418C22556226E000A0B0D /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		73D2CEAE25556CA7003894F2 /* Nate_chellenge_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nate_chellenge_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		73D2CEB125556CA7003894F2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -164,7 +162,6 @@
 			children = (
 				7343EB3225576E7300B6679E /* Displayable.swift */,
 				7343EAF12556C85D00B6679E /* Product.swift */,
-				7343EB5A2557B03B00B6679E /* ProductModel.swift */,
 				7343EB3A2557777D00B6679E /* Products.swift */,
 			);
 			path = Networking;
@@ -494,7 +491,6 @@
 				7343EB3325576E7300B6679E /* Displayable.swift in Sources */,
 				7343EB06255707CA00B6679E /* MerchantViewController.swift in Sources */,
 				7343EB3B2557777D00B6679E /* Products.swift in Sources */,
-				7343EB5B2557B03B00B6679E /* ProductModel.swift in Sources */,
 				7343EB0B255707E000B6679E /* MerchantTableViewCell.swift in Sources */,
 				73D2CEB225556CA7003894F2 /* AppDelegate.swift in Sources */,
 				73D2CEB425556CA7003894F2 /* SceneDelegate.swift in Sources */,

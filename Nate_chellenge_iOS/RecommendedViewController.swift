@@ -11,16 +11,15 @@ import SwiftyJSON
 
 class RecommendedViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     @IBOutlet weak var tableView: UITableView!
-   // var products: [Product] = []
-   // var items: [Displayable] = []
     //MARK: Properties
-    var products = [ProductModel]()
+    var items: [Displayable] = [] //products objects retreived from server
+
 
     
     //MARK: TableViewController delegate
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-   //     return products.count
-        return 10
+        return items.count
+
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -31,6 +30,13 @@ class RecommendedViewController: UIViewController, UITableViewDelegate, UITableV
             fatalError("The dequeued cell is not an instance of ProductTableViewCell")
         }
         
+        
+        let item = items[indexPath.row]
+        cell.productNameLabel.text = item.titleLabel
+     //   cell.productImageView.image = item.imagesUrl ----> download image from url and store into each cell!
+        cell.merchantLabel.text = item.merchantLabel
+        cell.priceLabel.text = "£"
+
         
 //        let product = products[indexPath.row]
         
@@ -116,7 +122,8 @@ class RecommendedViewController: UIViewController, UITableViewDelegate, UITableV
         self.tableView.dataSource = self
         
         CallRestProducts()
-       
+//        HttpCallProducts()
+      //  testCall()
         
     }
     
@@ -136,16 +143,29 @@ class RecommendedViewController: UIViewController, UITableViewDelegate, UITableV
     //API CALLING usins Alamofire from localhost https
       func CallRestProducts() {
        let request = AF.request("http://localhost:3000/products", method: .post)
-        request.responseJSON { (data) in
-            let myJson = try? JSON(data: data.data!)
-           // print(myJson)
-            print(myJson)
-            
+     //  let request = AF.request("https://swapi.dev/api/films", method: .get)
+//        request.responseJSON { (data) in
+//          print(data)
+//        }
+        
+        
+        //connect JSON decoder to networkings codables
+        request.responseDecodable(of: Products.self) { (response) in
+            guard let products = response.value else { return }
+            //print(products.all[1].title)
+        // retreive data from server to declared objects
+            self.items = products.all
+            self.tableView.reloadData()
+
+        
+
         }
+        
+    
+
     }
+    //===================================================================>
+ 
     
-   
-    
-   
 }
 

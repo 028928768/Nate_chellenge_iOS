@@ -6,12 +6,10 @@
 //
 
 struct Products: Decodable {
-    let count: Int
     let all: [Product]
     
     enum CodingKeys: String, CodingKey {
-        case count
-        case all = "results"
+        case all = "posts"
         
     }
 }
