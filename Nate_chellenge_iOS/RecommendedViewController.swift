@@ -132,6 +132,8 @@ class RecommendedViewController: UIViewController, UITableViewDelegate, UITableV
     */
 
 }; extension RecommendedViewController {
+    
+    //API CALLING usins Alamofire from localhost https
       func CallRestProducts() {
        let request = AF.request("http://localhost:3000/products", method: .post)
         request.responseJSON { (data) in
