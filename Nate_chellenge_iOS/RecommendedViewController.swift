@@ -14,9 +14,8 @@ class RecommendedViewController: UIViewController, UITableViewDelegate, UITableV
    // var products: [Product] = []
    // var items: [Displayable] = []
     //MARK: Properties
-  //  var products = [Product]()
-    var product_titles = [String]()
-    var product_merchants = [String]()
+    var products = [ProductModel]()
+
     
     //MARK: TableViewController delegate
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -117,6 +116,7 @@ class RecommendedViewController: UIViewController, UITableViewDelegate, UITableV
         self.tableView.dataSource = self
         
         CallRestProducts()
+       
         
     }
     
@@ -137,14 +137,12 @@ class RecommendedViewController: UIViewController, UITableViewDelegate, UITableV
         request.responseJSON { (data) in
             let myJson = try? JSON(data: data.data!)
            // print(myJson)
-            for i in myJson!{
-            
-            }
+            print(myJson)
             
         }
     }
     
-
+   
     
    
 }
