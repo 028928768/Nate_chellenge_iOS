@@ -21,7 +21,7 @@ class DetailViewController: UIViewController {
     
     //MARK: selectedProduct from previous page
     var data: Displayable?
-    var passedString: String = "Not pass"
+  
     
     
     //MARK: selected Data initilise
@@ -53,7 +53,7 @@ class DetailViewController: UIViewController {
        
       //  print(data?.titleLabel)
         initProductDetails()
-        print(passedString)
+  
      
           
     }

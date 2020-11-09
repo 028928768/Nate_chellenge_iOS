@@ -17,22 +17,23 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="d5F-U9-G7M">
+                            <containerView opaque="NO" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="d5F-U9-G7M">
                                 <rect key="frame" x="0.0" y="0.0" width="415" height="280"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <connections>
                                     <segue destination="4DA-ff-2li" kind="embed" id="eDm-z3-Syf"/>
                                 </connections>
                             </containerView>
-                            <searchBar alpha="0.80000000000000004" contentMode="redraw" fixedFrame="YES" barStyle="black" searchBarStyle="prominent" text="" translatesAutoresizingMaskIntoConstraints="NO" id="OMY-G4-5Pg">
+                            <searchBar alpha="0.80000000000000004" contentMode="redraw" barStyle="black" searchBarStyle="prominent" text="" translatesAutoresizingMaskIntoConstraints="NO" id="OMY-G4-5Pg">
                                 <rect key="frame" x="52" y="44" width="311" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="311" id="ksS-Rz-FwO"/>
+                                    <constraint firstAttribute="height" constant="44" id="nlC-sg-S5X"/>
+                                </constraints>
                                 <color key="barTintColor" systemColor="tertiarySystemBackgroundColor"/>
                                 <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES"/>
                             </searchBar>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="lmb-o7-l6i">
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="lmb-o7-l6i">
                                 <rect key="frame" x="20" y="281" width="374" height="32"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <segments>
                                     <segment title="Recommended"/>
                                     <segment title="Best sellings"/>
@@ -41,50 +42,87 @@
                                     <action selector="SegmentController:" destination="BYZ-38-t0r" eventType="valueChanged" id="MPp-Pp-7uK"/>
                                 </connections>
                             </segmentedControl>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tKd-Ay-pyh">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tKd-Ay-pyh">
                                 <rect key="frame" x="8" y="50" width="32" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="k6E-TE-MtF"/>
+                                </constraints>
                                 <color key="tintColor" systemColor="labelColor"/>
                                 <state key="normal" image="ellipsis" catalog="system"/>
                             </button>
-                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sOR-Dc-hF4">
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sOR-Dc-hF4">
                                 <rect key="frame" x="-17" y="320" width="431" height="508"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <connections>
                                     <segue destination="LgO-WM-vXI" kind="embed" id="M42-nd-zbc"/>
                                 </connections>
                             </containerView>
-                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iSC-Yn-dgm">
+                            <containerView opaque="NO" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iSC-Yn-dgm">
                                 <rect key="frame" x="1" y="320" width="414" height="878"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <connections>
                                     <segue destination="eQJ-Nh-Fdm" kind="embed" id="5xC-g0-wwf"/>
                                 </connections>
                             </containerView>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="t8S-5H-iTf">
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="t8S-5H-iTf">
                                 <rect key="frame" x="1" y="828" width="414" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="ePC-38-xaD"/>
+                                </constraints>
                                 <items>
-                                    <barButtonItem title="Home" id="IUl-RE-NZH"/>
-                                    <barButtonItem title="Search" id="au8-ru-4O6"/>
-                                    <barButtonItem title="Shopping" id="b6j-dH-VXg"/>
-                                    <barButtonItem title="Mails" id="mwb-pR-Tav"/>
-                                    <barButtonItem title="Profiles" id="MIi-bw-DSs"/>
+                                    <barButtonItem image="home-bar-icon" width="96" id="IUl-RE-NZH"/>
+                                    <barButtonItem image="search-bar-icon" id="au8-ru-4O6"/>
+                                    <barButtonItem title="Shopping" image="shop-bar-icon" id="b6j-dH-VXg"/>
+                                    <barButtonItem image="mail-bar-icon" id="mwb-pR-Tav"/>
+                                    <barButtonItem title="Profiles" landscapeImage="profile-bar-icon" width="77.5" id="MIi-bw-DSs">
+                                        <imageReference key="image" image="profile-bar-icon" symbolScale="small" renderingMode="original"/>
+                                    </barButtonItem>
                                 </items>
                             </toolbar>
-                            <pageControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="4" translatesAutoresizingMaskIntoConstraints="NO" id="56A-oM-oyb">
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="4" translatesAutoresizingMaskIntoConstraints="NO" id="56A-oM-oyb">
                                 <rect key="frame" x="0.0" y="245" width="140" height="28"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </pageControl>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rnE-1b-59A">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rnE-1b-59A">
                                 <rect key="frame" x="363" y="50" width="41" height="40"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Rey-Vt-By6"/>
+                                </constraints>
                                 <color key="tintColor" systemColor="labelColor"/>
                                 <state key="normal" image="paperplane.circle" catalog="system"/>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="d5F-U9-G7M" firstAttribute="centerX" secondItem="OMY-G4-5Pg" secondAttribute="centerX" id="10S-QX-5Tq"/>
+                            <constraint firstItem="lmb-o7-l6i" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="5Cp-Fh-MUM"/>
+                            <constraint firstItem="d5F-U9-G7M" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="-44" id="6rD-xb-aNg"/>
+                            <constraint firstItem="iSC-Yn-dgm" firstAttribute="trailing" secondItem="t8S-5H-iTf" secondAttribute="trailing" id="ARd-JY-dKP"/>
+                            <constraint firstItem="sOR-Dc-hF4" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="FdR-VE-oz3"/>
+                            <constraint firstItem="iSC-Yn-dgm" firstAttribute="leading" secondItem="t8S-5H-iTf" secondAttribute="leading" id="KMr-KU-yu5"/>
+                            <constraint firstItem="d5F-U9-G7M" firstAttribute="leading" secondItem="56A-oM-oyb" secondAttribute="leading" id="P8O-3x-6el"/>
+                            <constraint firstItem="d5F-U9-G7M" firstAttribute="trailing" secondItem="t8S-5H-iTf" secondAttribute="trailing" id="QFV-nC-rzb"/>
+                            <constraint firstAttribute="bottom" secondItem="iSC-Yn-dgm" secondAttribute="bottom" constant="-302" id="QbB-dY-JGy"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="t8S-5H-iTf" secondAttribute="bottom" constant="-10" id="XUh-FQ-Hqj"/>
+                            <constraint firstItem="rnE-1b-59A" firstAttribute="leading" secondItem="OMY-G4-5Pg" secondAttribute="trailing" id="b08-zw-HXV"/>
+                            <constraint firstItem="sOR-Dc-hF4" firstAttribute="top" secondItem="iSC-Yn-dgm" secondAttribute="top" id="bdC-6J-weG"/>
+                            <constraint firstItem="tKd-Ay-pyh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="dar-Tq-sZq"/>
+                            <constraint firstItem="OMY-G4-5Pg" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="dgP-vb-hkr"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="rnE-1b-59A" secondAttribute="trailing" constant="10" id="elV-Ne-kE9"/>
+                            <constraint firstItem="t8S-5H-iTf" firstAttribute="top" secondItem="sOR-Dc-hF4" secondAttribute="bottom" id="hap-aO-D9j"/>
+                            <constraint firstItem="sOR-Dc-hF4" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-37" id="hce-yK-isr"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="56A-oM-oyb" secondAttribute="trailing" constant="274" id="hiA-u6-TYt"/>
+                            <constraint firstItem="OMY-G4-5Pg" firstAttribute="centerX" secondItem="lmb-o7-l6i" secondAttribute="centerX" id="jLO-Rj-ZH0"/>
+                            <constraint firstItem="OMY-G4-5Pg" firstAttribute="centerX" secondItem="t8S-5H-iTf" secondAttribute="centerX" id="m9z-LY-Tj2"/>
+                            <constraint firstItem="lmb-o7-l6i" firstAttribute="top" secondItem="d5F-U9-G7M" secondAttribute="bottom" constant="1" id="mUn-pb-DrP"/>
+                            <constraint firstItem="56A-oM-oyb" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="245" id="nGs-3L-6fb"/>
+                            <constraint firstItem="lmb-o7-l6i" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="om8-gi-6wq"/>
+                            <constraint firstItem="tKd-Ay-pyh" firstAttribute="top" secondItem="rnE-1b-59A" secondAttribute="top" id="pek-G4-if4"/>
+                            <constraint firstItem="OMY-G4-5Pg" firstAttribute="leading" secondItem="tKd-Ay-pyh" secondAttribute="trailing" constant="12" id="qlh-bk-rxP"/>
+                            <constraint firstItem="tKd-Ay-pyh" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="6" id="tJ3-x9-cev"/>
+                            <constraint firstItem="56A-oM-oyb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="vPA-zA-hq7"/>
+                            <constraint firstItem="sOR-Dc-hF4" firstAttribute="top" secondItem="lmb-o7-l6i" secondAttribute="bottom" constant="8" id="veW-PI-uuY"/>
+                            <constraint firstItem="lmb-o7-l6i" firstAttribute="top" secondItem="56A-oM-oyb" secondAttribute="bottom" constant="8" id="ydw-DY-Xa3"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="OfficialView" destination="sOR-Dc-hF4" id="qlD-bu-umg"/>
@@ -520,10 +558,16 @@
         <image name="chevron.backward" catalog="system" width="96" height="128"/>
         <image name="defaultProduct" width="256" height="256"/>
         <image name="ellipsis" catalog="system" width="128" height="37"/>
+        <image name="home-bar-icon" width="50" height="50"/>
         <image name="home-bedroom" width="1024" height="643.5"/>
         <image name="home-clothes" width="484" height="408.5"/>
         <image name="home-gaming" width="385" height="255"/>
+        <image name="mail-bar-icon" width="50" height="50"/>
         <image name="paperplane.circle" catalog="system" width="128" height="121"/>
+        <image name="profile-bar-icon" width="60" height="60"/>
+        <image name="profile-bar-icon" width="60" height="60"/>
+        <image name="search-bar-icon" width="48" height="48"/>
+        <image name="shop-bar-icon" width="100" height="100"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
