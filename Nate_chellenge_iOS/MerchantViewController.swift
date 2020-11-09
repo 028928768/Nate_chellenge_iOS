@@ -54,15 +54,44 @@ class MerchantViewController: UIViewController, UITableViewDelegate, UITableView
     
     //MARK: Private functions
     private func loadSampleMerchants(){
-        let defaultProductPhoto = UIImage(named: "defaultProduct")
+        let merchant_logo1 = UIImage(named: "nate-Logo")
+        let merchant_logo2 = UIImage(named: "apple-Logo")
+        let merchant_logo3 = UIImage(named: "ikea-Logo")
+        let merchant_logo4 = UIImage(named: "ms-Logo")
+        let merchant_logo5 = UIImage(named: "nvidia-Logo")
+        let merchant_logo6 = UIImage(named: "sony-Logo")
+        let merchant_logo7 = UIImage(named: "trainLine-Logo")
+        let merchant_logo8 = UIImage(named: "barclays-Logo")
         
+        //bruteforce initialise merchants data
+        guard let merchant1 = Merchant(no: "1.", photo: merchant_logo1, merchant: "Nate", rating: "rating: 5") else {
+            fatalError("Unable to load merchants1")
+        }
         
-        guard let merchant1 = Merchant(no: "1.", photo: defaultProductPhoto, merchant: "Apple, Ltd", rating: "rating: 5") else {
-            fatalError("Unable to load merchants")
+        guard let merchant2 = Merchant(no: "2.", photo: merchant_logo2, merchant: "Apple", rating: "rating: 4.8") else {
+            fatalError("Unable to load merchants2")
+        }
+        guard let merchant3 = Merchant(no: "3.", photo: merchant_logo3, merchant: "Ikea", rating: "rating: 4.7") else {
+            fatalError("Unable to load merchants3")
+        }
+        guard let merchant4 = Merchant(no: "4.", photo: merchant_logo4, merchant: "Mark & Spencor", rating: "rating: 4.2") else {
+            fatalError("Unable to load merchants4")
+        }
+        guard let merchant5 = Merchant(no: "5.", photo: merchant_logo5, merchant: "Nvidia", rating: "rating: 4.0") else {
+            fatalError("Unable to load merchants4")
+        }
+        guard let merchant6 = Merchant(no: "6.", photo: merchant_logo6, merchant: "Sony", rating: "rating: 4.1") else {
+            fatalError("Unable to load merchants5")
+        }
+        guard let merchant7 = Merchant(no: "7.", photo: merchant_logo7, merchant: "Trainline, UK", rating: "rating: 4.2") else {
+            fatalError("Unable to load merchants1")
+        }
+        guard let merchant8 = Merchant(no: "8.", photo: merchant_logo8, merchant: "Barclays, UK", rating: "rating: 3.9") else {
+            fatalError("Unable to load merchants8")
         }
      
         
-        merchants += [merchant1,merchant1,merchant1,merchant1,merchant1]
+        merchants += [merchant1,merchant2,merchant3,merchant4,merchant5,merchant6,merchant7,merchant8]
     }
     override func viewDidLoad() {
         super.viewDidLoad()
