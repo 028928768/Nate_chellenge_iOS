@@ -7,3 +7,5 @@ products displaying application for Nate challenge iOS
    pod 'Alamofire' <br /> 
    pod 'SwiftyJSON'<br />
    pod 'Kingfisher'<br />
+
+# Display Products with beautiful, simple, and accessible User Interfaces!
