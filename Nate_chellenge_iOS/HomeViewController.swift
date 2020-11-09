@@ -29,16 +29,16 @@ class HomeViewController: UIViewController, UISearchBarDelegate {
     }
     
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
-        performSegue(withIdentifier: "feedSegue", sender: self)
+        performSegue(withIdentifier: "searchSegue", sender: self)
         UISearchBar.resignFirstResponder()
     }
     func searchBarResultsListButtonClicked(_ searchBar: UISearchBar) {
-        performSegue(withIdentifier: "feedSegue", sender: self)
+        performSegue(withIdentifier: "searchSegue", sender: self)
         UISearchBar.resignFirstResponder()
     }
     
     func searchBarTextDidBeginEditing(_ searchBar: UISearchBar) {
-        performSegue(withIdentifier: "feedSegue", sender: self)
+        performSegue(withIdentifier: "searchSegue", sender: self)
         UISearchBar.resignFirstResponder()
     }
     func searchBarTextDidEndEditing(_ searchBar: UISearchBar) {
@@ -46,7 +46,7 @@ class HomeViewController: UIViewController, UISearchBarDelegate {
     }
     
     @IBAction func expandButton(_ sender: Any) {
-         performSegue(withIdentifier: "feedSegue", sender: self)
+         performSegue(withIdentifier: "searchSegue", sender: self)
     }
     @IBOutlet weak var PageImageView: UIImageView!
     override func viewDidLoad() {

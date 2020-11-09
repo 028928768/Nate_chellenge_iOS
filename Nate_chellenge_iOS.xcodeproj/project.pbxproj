@@ -22,6 +22,7 @@
 		7343EB37255773CC00B6679E /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7343EB36255773CC00B6679E /* DetailViewController.swift */; };
 		7343EB3B2557777D00B6679E /* Products.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7343EB3A2557777D00B6679E /* Products.swift */; };
 		736418C32556226E000A0B0D /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 736418C22556226E000A0B0D /* FeedViewController.swift */; };
+		73B668A42558E17D008947C6 /* SearchTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73B668A32558E17D008947C6 /* SearchTableViewController.swift */; };
 		73D2CEB225556CA7003894F2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73D2CEB125556CA7003894F2 /* AppDelegate.swift */; };
 		73D2CEB425556CA7003894F2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73D2CEB325556CA7003894F2 /* SceneDelegate.swift */; };
 		73D2CEB625556CA7003894F2 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73D2CEB525556CA7003894F2 /* HomeViewController.swift */; };
@@ -84,6 +85,7 @@
 		7343EB36255773CC00B6679E /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		7343EB3A2557777D00B6679E /* Products.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Products.swift; sourceTree = "<group>"; };
 		736418C22556226E000A0B0D /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		73B668A32558E17D008947C6 /* SearchTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTableViewController.swift; sourceTree = "<group>"; };
 		73D2CEAE25556CA7003894F2 /* Nate_chellenge_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nate_chellenge_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		73D2CEB125556CA7003894F2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		73D2CEB325556CA7003894F2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -196,6 +198,7 @@
 				73D2CEB325556CA7003894F2 /* SceneDelegate.swift */,
 				73D2CEB525556CA7003894F2 /* HomeViewController.swift */,
 				73D2CEB725556CA7003894F2 /* Main.storyboard */,
+				73B668A32558E17D008947C6 /* SearchTableViewController.swift */,
 				7343EB31255765A600B6679E /* Networking */,
 				7343EB05255707CA00B6679E /* MerchantViewController.swift */,
 				7343EB0A255707E000B6679E /* MerchantTableViewCell.swift */,
@@ -486,6 +489,7 @@
 				736418C32556226E000A0B0D /* FeedViewController.swift in Sources */,
 				730296AE2555F43D008B0FB6 /* ViewController1.swift in Sources */,
 				730296B82555F458008B0FB6 /* ViewController3.swift in Sources */,
+				73B668A42558E17D008947C6 /* SearchTableViewController.swift in Sources */,
 				7343EAFC2556CDD000B6679E /* RecommendedViewController.swift in Sources */,
 				73D2CEB625556CA7003894F2 /* HomeViewController.swift in Sources */,
 				7343EB3325576E7300B6679E /* Displayable.swift in Sources */,
