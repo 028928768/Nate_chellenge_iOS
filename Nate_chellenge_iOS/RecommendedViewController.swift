@@ -8,6 +8,7 @@
 import UIKit
 import Alamofire
 import SwiftyJSON
+import Kingfisher
 
 class RecommendedViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     @IBOutlet weak var tableView: UITableView!
@@ -35,7 +36,13 @@ class RecommendedViewController: UIViewController, UITableViewDelegate, UITableV
         
         let item = items[indexPath.row]
         cell.productNameLabel.text = item.titleLabel
-     //   cell.productImageView.image = item.imagesUrl ----> download image from url and store into each cell!
+        
+        //download Image from URL using KF and set to ImageView
+        let url = URL(string: item.imagesUrl[0])
+        cell.productImageView?.kf.setImage(with: url)
+        
+      //  cell.productImageView?.image = item.imagesUrl
+
         cell.merchantLabel.text = item.merchantLabel
         cell.priceLabel.text = "£"
         
@@ -115,7 +122,7 @@ class RecommendedViewController: UIViewController, UITableViewDelegate, UITableV
               return
             }
             destinationVC.data = selectedItem
-            destinationVC.passedString = "PASS!"
+        //    destinationVC.passedString = "PASS!"
         
             
             }
@@ -139,6 +146,7 @@ class RecommendedViewController: UIViewController, UITableViewDelegate, UITableV
         request.responseDecodable(of: Products.self) { (response) in
             guard let products = response.value else { return }
             //print(products.all[1].title)
+            print(products.all[1].images[0])
         // retreive data from server to declared objects
             self.items = products.all
             self.tableView.reloadData()
