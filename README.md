@@ -3,6 +3,7 @@ products displaying application for Nate challenge iOS
 
 
 # Pod file Dependencies
-   pod 'DeckTransition'. 
-   pod 'Alamofire'. 
-   pod 'SwiftyJSON'.
+   pod 'DeckTransition'<br /> 
+   pod 'Alamofire' <br /> 
+   pod 'SwiftyJSON'<br />
+   pod 'Kingfisher'<br />
