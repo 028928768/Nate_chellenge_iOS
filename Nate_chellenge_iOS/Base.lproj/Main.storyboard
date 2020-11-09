@@ -24,7 +24,7 @@
                                 </connections>
                             </containerView>
                             <searchBar alpha="0.80000000000000004" contentMode="redraw" barStyle="black" searchBarStyle="prominent" text="" translatesAutoresizingMaskIntoConstraints="NO" id="OMY-G4-5Pg">
-                                <rect key="frame" x="52" y="44" width="311" height="44"/>
+                                <rect key="frame" x="51.5" y="44" width="311" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="311" id="ksS-Rz-FwO"/>
                                     <constraint firstAttribute="height" constant="44" id="nlC-sg-S5X"/>
@@ -43,7 +43,7 @@
                                 </connections>
                             </segmentedControl>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tKd-Ay-pyh">
-                                <rect key="frame" x="8" y="50" width="32" height="34"/>
+                                <rect key="frame" x="8" y="50" width="31.5" height="34"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="34" id="k6E-TE-MtF"/>
                                 </constraints>
@@ -82,7 +82,7 @@
                                 <rect key="frame" x="0.0" y="245" width="140" height="28"/>
                             </pageControl>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rnE-1b-59A">
-                                <rect key="frame" x="363" y="50" width="41" height="40"/>
+                                <rect key="frame" x="362.5" y="50" width="41.5" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="Rey-Vt-By6"/>
                                 </constraints>
