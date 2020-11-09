@@ -27,13 +27,16 @@ class DetailViewController: UIViewController {
     //MARK: selected Data initilise
     private func initProductDetails() {
         guard let data = data else { return }
-        titleLabel.text = "TextTEST"
         titleLabel.text = data.titleLabel
         idLabel.text = data.idLabel
         merchantLabel.text = data.merchantLabel
         urlLabel.text = data.urlLabel
         createdLabel.text = data.createdLabel
         updatedLabel.text = data.updatedLabel
+        //set product image
+        let url = URL(string: data.imagesUrl[0])
+        productImageView?.kf.setImage(with: url)
+       
           
     
         
